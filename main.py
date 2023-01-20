@@ -35,14 +35,3 @@ if will_rain:
     )
 
     print(message.status)
-
-else:
-    client = Client(account_sid, auth_token)
-    message = client.messages \
-        .create(
-        body="Avui no ha de ploure",
-        from_="+15154747090",
-        to="+34636641773"
-    )
-
-    print(message.status)
