@@ -29,9 +29,9 @@ if will_rain:
     client = Client(account_sid, auth_token)
     message = client.messages \
         .create(
-        body="Hola Mama, ha de ploure, agafa un paraigues",
-        from_="+15154747090",
-        to="+34636641773"
+        body="It's going to rain today, bring an umbrella",
+        from_="",
+        to=""
     )
 
     print(message.status)
